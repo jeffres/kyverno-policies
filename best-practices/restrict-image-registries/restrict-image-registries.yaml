@@ -30,8 +30,8 @@ spec:
       pattern:
         spec:
           =(ephemeralContainers):
-          - image: "eu.foo.io/* | bar.io/*"
+          - image: "{{ image.registry.url }}/*"
           =(initContainers):
-          - image: "eu.foo.io/* | bar.io/*"
+          - image: "{{ image.registry.url }}/*"
           containers:
-          - image: "eu.foo.io/* | bar.io/*"
+          - image: "{{ image.registry.url }}/*"
